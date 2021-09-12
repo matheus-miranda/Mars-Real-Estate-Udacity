@@ -50,6 +50,9 @@ class OverviewFragment : Fragment() {
         // Giving the binding access to the OverviewViewModel
         binding.viewModel = viewModel
 
+        // Initialize the adapter
+        binding.rvPhotosGrid.adapter = PhotoGridAdapter()
+
         setHasOptionsMenu(true)
         return binding.root
     }

@@ -38,7 +38,7 @@ class OverviewViewModel : ViewModel() {
         get() = _status
 
     private val _properties = MutableLiveData<List<MarsProperty>>()
-    val property: LiveData<List<MarsProperty>>
+    val properties: LiveData<List<MarsProperty>>
         get() = _properties
 
     /**
